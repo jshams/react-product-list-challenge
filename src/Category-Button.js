@@ -1,4 +1,13 @@
 import React from 'react'
-import { categories } from './inventory.js'
+import './Category-Button.css'
 
-const category Buttons 
+const CategoryButton = (props) => {
+    return (
+        <button
+            onClick={() => props.onClick(props.label)}
+            className="category-button"
+        >{props.label}</button>
+    )
+}
+
+export default CategoryButton
