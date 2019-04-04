@@ -1,8 +1,32 @@
 .App {
- width: 960px;
- margin: auto;
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
+    width: 960px;
+    margin: auto;
+}
+.inventory {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.item-card {
+    border: solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
 }
 
+.title {
+    color: green;
+    font-weight: 900;
+    margin-bottom: 0
+}
 
+.desc {
+    margin: 10px;
+    margin-top: 5px;
+
+}
+
+.price {
+    position: relative;
+    left: 200px;
+
+}
