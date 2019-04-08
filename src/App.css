@@ -36,3 +36,18 @@
     grid-template-columns: repeat(11, 1fr);
 
 }
+
+.reset-filters {
+    height: 25px;
+    border: solid #ffaa00;
+    border-radius: 5px;
+    margin: 5px;
+    color: #ffaa00;
+    background-color: white
+}
+
+.reset-filters:hover {
+    background-color: #ffaa00;
+    cursor: pointer;
+    color: white;
+}
