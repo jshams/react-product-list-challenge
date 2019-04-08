@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentCategory: 'Sports'
+      currentCategory: null
     }
   }
 
@@ -64,9 +64,8 @@ class App extends Component {
         <div className="cat-btns"> {cats} </div>
         <button
           onClick={() => this.setCategory(null)}
-          className="reset-filters"
-        >Reset filters</button>
-
+          className={"reset-filters" + (this.state.currentCategory !== null ? '' : " hidden")}
+        >Reset Filters</button>
         <ul className="inventory">
           {items}
         </ul>

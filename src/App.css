@@ -10,7 +10,7 @@
 }
 
 .item-card {
-    border-bottom: solid;
+    border-bottom: solid #ffaa00;
     display: grid;
     grid-template-columns: repeat(4, 1fr)
     /* flex-direction: row; */
@@ -20,10 +20,12 @@
 
 .item-card > * {
     position: relative;
+    bottom: 0;
+    padding-left: 0px;
 }
 
 .title {
-    color: green;
+    color: #340d63;
     font-weight: 900;
 }
 
@@ -34,7 +36,7 @@
 
 .price {
     position: relative;
-    right: 0px;
+    left: 191px;
 }
 
 .cat-btns {
@@ -55,4 +57,8 @@
     background-color: #ffaa00;
     cursor: pointer;
     color: white;
+}
+
+.hidden {
+    visibility: hidden;
 }
