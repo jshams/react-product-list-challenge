@@ -4,7 +4,7 @@
 }
 .inventory {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 .item-card {
     border: solid;
@@ -28,5 +28,11 @@
 .price {
     position: relative;
     left: 200px;
+
+}
+
+.cat-btns {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
 
 }

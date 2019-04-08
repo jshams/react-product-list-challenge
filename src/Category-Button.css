@@ -1,0 +1,20 @@
+.category-button {
+    height: 25px;
+    border: solid #340d63;
+    border-radius: 5px;
+    margin: 5px;
+    color: #340d63;
+    background-color: white
+}
+
+.category-button:hover {
+    background-color: #340d63;
+    cursor: pointer;
+    color: white;
+}
+
+.selected {
+    background-color: #340d63;
+    cursor: pointer;
+    color: white;
+}

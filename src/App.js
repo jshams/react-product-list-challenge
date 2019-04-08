@@ -13,7 +13,6 @@ class App extends Component {
   }
 
   setCategory(cat) {
-    console.log(cat)
     this.setState({ currentCategory: cat })
     // this.state.currentCategory = cat
   }
@@ -31,7 +30,9 @@ class App extends Component {
         <CategoryButton
           key={cat}
           label={cat}
-          onClick={(cat) => this.setCategory(cat)}
+          onClick={(cat) => {
+            this.setCategory(cat)
+          }}
 
         />
       )
@@ -55,18 +56,20 @@ class App extends Component {
 
     return (
       <div className="App" >
-        <h1>Show products here</h1>
-        {cats}
+        <h1>PRODUCTS</h1>
+
+        <div className="cat-btns"> {cats} </div>
+        <button
+          onClick={() => this.setCategory(null)}
+          className="reset-filters"
+        >Reset filters</button>
 
         <ul className="inventory">
           {items}
         </ul>
 
-        <ul>
-          {/* Products listed here */}
-        </ul>
 
-      </div>
+      </div >
     );
   }
 }
