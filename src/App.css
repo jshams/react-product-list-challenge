@@ -3,38 +3,43 @@
     margin: auto;
 }
 .inventory {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-direction: column;
 }
+
 .item-card {
-    border: solid;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
+    border-bottom: solid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.item-card > * {
+    position: relative;
 }
 
 .title {
     color: green;
     font-weight: 900;
-    margin-bottom: 0
 }
 
 .desc {
-    margin: 10px;
-    margin-top: 5px;
-
+    /* margin: 10px;
+    margin-top: 5px; */
 }
 
 .price {
     position: relative;
-    left: 200px;
-
+    right: 0px;
 }
 
 .cat-btns {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-
 }
 
 .reset-filters {

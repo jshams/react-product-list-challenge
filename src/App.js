@@ -26,10 +26,13 @@ class App extends Component {
 
   render() {
     const cats = categories.map((cat) => {
+      // if (this.state.currentCategory == cat)
       return (
         <CategoryButton
+          className={this.state.currentCategory === cat ? 'selected' : ''}
           key={cat}
           label={cat}
+          selected={this.state.currentCategory === cat}
           onClick={(cat) => {
             this.setCategory(cat)
           }}
